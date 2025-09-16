@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.headerNavList {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.hamburgerIcon {
+  height: 32px;
+  width: 32px;
+  display: none; /* sets the hamburget icon to not-visible in default view */
+}
+
+/* Max width is 1px larger than the smallest device size */
+/* Header styling (breakpoint) for mobile L or less */
+@media (max-width: 426px) {
+  body {
+    /* background-color: red; */
+  }
+
+  .headerNavUl {
+    display: none; /* hides the default nav list in mobile view */
+  }
+
+  /* For use with JS show or hidden add/remove function */
+  /* need to define .hidden and .show in CSS */
+  /* Must also add "hidden" to class name in HTML */
+  /* .hidden {
+  display: none;  if using this method you do not need display:none on the headerNavUl element above 
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+  .hamburgerIcon {
+    display: flex; /* Sets the hamburger to visible in mobile view */
+  }
+}
+
+/* Tablet */
+@media (min-width: 427px) and (max-width: 1023px) {
+  body {
+    background-color: green;
+  }
+}
+
+/* MAIN */
+section {
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroText {
+  width: 50%; /* 50% of size defined in parent element - in this case, section { height: 100vh; } */
+}
+
+.heroImg {
+  width: 50%; /* 50% of size defined in its parent element - in this case, section { height: 100vh; } */
+}
+
+@media (max-width: 426px) {
+  .hero {
+    flex-direction: column;
+  }
+  .heroText,
+  .heroImg {
+    width: 100%; /* 100% size is definted by the @media query - in this case, max-width */
+  }
+}
+
+/* FOOTER */
+footer {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
