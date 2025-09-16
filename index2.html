@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+  <!-- head = informasjon til nettleser -->
+  <head>
+    <title>Alien Realestate</title>
+    <link href="code.png" rel="icon" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- External Files -->
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <!-- body = informasjon til nettsiden -->
+  <body>
+    <header>
+      <!-- Logo, bedriftnavn, navigasjon, temabytter, søkefelt, SoMe -->
+      <img src="code.png" alt="Ikon av HTML klammetegn" />
+
+      <nav class="headerNav">
+        <ul class="headerNavUl hidden">
+          <!-- each individual word is a different class name that can be referenced in external CSS to be modified via JS -->
+          <li>
+            <a href="#">Item</a>
+          </li>
+          <li>
+            <a href="#">Item</a>
+          </li>
+          <li>
+            <a href="#">Item</a>
+          </li>
+        </ul>
+
+        <!-- onclick="hamburgerToggle" = Activates the JS function -->
+        <img
+          onclick="hamburgerToggle()"
+          class="hamburgerIcon"
+          src="/assets/hamburger.png"
+          alt="hamburger menu icon"
+        />
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hovedinnhold: introduksjon, produkt, fremvisning -->
+      <section class="hero">
+
+      </section>
+
+
+    </main>
+
+    <footer>
+      <!-- Logo, navigasjon, kreditasjon, ToS, søkefelt, SoMe -->
+      <h3>Laget av Julie Hauge</h3>
+    </footer>
+
+    <!-- Method 2: Script tag lowest in body -->
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

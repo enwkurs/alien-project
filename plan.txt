@@ -1,0 +1,47 @@
+HEADER
+flex horizontal
+img - logo
+navigation <nav> links
+
+MAIN
+
+HERO SECTION
+flex horizontal
+
+img
+
+text div
+column
+title
+text intro
+
+SECTION 2
+column
+title, then cards
+
+cards div
+horizontal
+
+card
+horizontal
+
+img
+
+card text div
+column
+
+SECTION 3
+column
+img
+title
+
+
+FOOTER
+flex horizontal
+space between
+
+Credits div
+column
+
+Socials div
+flex horizontal

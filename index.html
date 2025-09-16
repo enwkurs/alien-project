@@ -1,78 +1,85 @@
 <!DOCTYPE html>
-<html lang="no">
-  <!-- head = informasjon til nettleser -->
-  <head>
-    <title>Hjem</title>
-    <link href="code.png" rel="icon" type="image/png" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!-- External Files -->
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
-  </head>
-  <!-- body = informasjon til nettsiden -->
-  <body>
-    <header>
-      <!-- Logo, bedriftnavn, navigasjon, temabytter, søkefelt, SoMe -->
-      <img src="code.png" alt="Ikon av HTML klammetegn" />
+<html lang="en">
+    <head>
+        <title>Alien Realestate</title>
+        <link href="code.png" rel="icon" type="img/png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        
+        <!-- External Files -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- <script defer src="script.js"></script> -->
 
-      <nav class="headerNav">
-        <ul class="headerNavUl hidden">
-          <!-- each individual word is a different class name that can be referenced in external CSS to be modified via JS -->
-          <li>
-            <a href="#">Item</a>
-          </li>
-          <li>
-            <a href="#">Item</a>
-          </li>
-          <li>
-            <a href="#">Item</a>
-          </li>
-        </ul>
+        <body>
+            <header class="flex">
+                <img src="/assets/ufo v 2.png" class="headerIcon">
+                <nav>
+                    <ul class="flex headerNavList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-        <!-- onclick="hamburgerToggle" = Activates the JS function -->
-        <img
-          onclick="hamburgerToggle()"
-          class="hamburgerIcon"
-          src="/assets/hamburger.png"
-          alt="hamburger menu icon"
-        />
-      </nav>
-    </header>
+            <section class="flex hero">
+                <img src="assets/ufo v 2.png">
+                <div class="heroTextWrapper">
+                    <h1>Alien Realestate</h1>
+                    <p>This part of the text will be a short sales pitch on Alien Realestate and should be a few sentences long. For now this is a placeholder text while I try to figure out what creative writing should be there. Writing is hard.</p>
+                </div>
+            </section>
 
-    <main>
-      <!-- Hovedinnhold: introduksjon, produkt, fremvisning -->
-      <section class="hero">
-        <!-- Hero / Main / Home -->
-        <div class="heroText">
-          <h1>Hero</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Dignissimos, aperiam!
-          </p>
-        </div>
-        <img
-          class="heroImg"
-          src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?q=80&w=1178&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Temporary placeholder image"
-        />
-      </section>
+            <section class="flex cardSection">
+                <h2>Available Prospects</h2>
+                <div class="flex cardDivContainer">
+                    <div class="flex cardDiv">
+                        <img src="/assets/ufo v 2.png" class="cardImg">
+                        <div class="cardDivText">
+                            <h3>Planet</h3>
+                            <p>This is a short seller section on the planet involved in this section. It is brief and only a few words. Not tons of info. Link to planet page.</p>
+                        </div>
+                    </div>
 
-      <!-- Tileggs section -->
-      <section>
-        <h2>Tileggs section</h2>
-      </section>
-      <section>
-        <h2>Tileggs section</h2>
-      </section>
-    </main>
+                    <div class="flex cardDiv">
+                        <img src="/assets/ufo v 2.png" class="cardImg">
+                        <div class="cardDivText">
+                            <h3>Planet</h3>
+                            <p>This is a short seller section on the planet involved in this section. It is brief and only a few words. Not tons of info. Link to planet page.</p>
+                        </div>
+                    </div>
 
-    <footer>
-      <!-- Logo, navigasjon, kreditasjon, ToS, søkefelt, SoMe -->
-      <h3>Laget av Julie Hauge</h3>
-    </footer>
+                    <div class="flex cardDiv">
+                        <img src="/assets/ufo v 2.png" class="cardImg">
+                        <div class="cardDivText">
+                            <h3>Planet</h3>
+                            <p>This is a short seller section on the planet involved in this section. It is brief and only a few words. Not tons of info. Link to planet page.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- Method 2: Script tag lowest in body -->
-    <!-- <script src="script.js"></script> -->
-  </body>
+            <section class="flex signOff">
+                <img src="/assets/ufo v 2.png">
+                <h2>Don't delay, invade today!</h2>
+            </section>
+
+            <footer>
+                <div class="creditsDiv">
+                    <h3>Credits</h3>
+                    <ul>
+                        <li>Credit Link</li>
+                        <li>Credit Link</li>
+                        <li>Credit Link</li>
+                    </ul>
+                </div>
+
+                <div class="socialsDiv">
+                    <img src="code.png">
+                    <img src="code.png">
+                    <img src="code.png">
+                </div>
+            </footer>
+        </body>
+    </head>
 </html>
