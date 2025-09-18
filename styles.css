@@ -1,11 +1,10 @@
 /* ------------------ GLOBAL VARIABLES ------------------ */
 :root { 
-    --bars: orange;
+    --bars-color: #26133A;
+    --bars-pad: 1em 2em;
 }
 
-/* ------------------ GLOBAL STYLING ------------------ */
-
-/* Media Queries - Breakpoints */
+/* ------------------ MEDIA QUERIES BREAK POINTS ------------------ */
 /* Phone W 430 */
 @media (max-width: 431px) {
     body {
@@ -20,8 +19,20 @@
     }
 }
 
+/* ------------------ GLOBAL STYLING ------------------ */
+@font-face {
+    font-family: Audiowave;
+    src: url(/assets/fonts/Audiowide-Regular.ttf)
+}
+
+@font-face {
+    font-family: Afacad;
+    src: url(/assets/fonts/Afacad-VariableFont_wght.ttf);
+    src: url(/assets/fonts/Afacad-VariableFont_wght.ttf)
+}
+
 body {
-    font-family: "Tahoma";
+    font-family: "Afacad", "sans-serif";
     margin: 0;
     padding: 0;
 }
@@ -38,14 +49,23 @@ img {
     max-width: 100%;
 }
 
+h1, h2, h3 {
+    font-family: "Audiowave", "sans-serif";
+}
+
+h1 {
+    font-size: 4rem;
+}
+
 
 /* ------------------ LOCAL STYLING ------------------ */
 /* Header */
 header {
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    background-color: var(--bars);
+    height: 5em;
+    background-color: var(--bars-color);
+    padding: var(--bars-pad);
 }
 
 .headerIcon {
@@ -55,6 +75,8 @@ header {
 .headerNavList {
     list-style-type: none;
     gap: 1em;
+    font-family: "Audiowave", "sans-serif";
+    font-size: 2em;
 }
 
 /* Main/Hero */
@@ -102,7 +124,8 @@ header {
 /* Footer */
 
 footer {
-    background-color: var(--bars);
+    background-color: var(--bars-color);
+    padding: var(--bars-pad);
 }
 
 /* ------------------ NAME ------------------ */
