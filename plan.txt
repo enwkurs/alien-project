@@ -45,3 +45,19 @@ column
 
 Socials div
 flex horizontal
+
+
+
+
+
+
+
+
+
+
+FIXES:
+
+Change flex order and element order for cards to match figma plan
+
+Change h2 and h3 use to match semantic page order or whatever you call it
+h2 on things visible before h3
