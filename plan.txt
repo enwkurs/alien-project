@@ -61,3 +61,11 @@ Change flex order and element order for cards to match figma plan
 
 Change h2 and h3 use to match semantic page order or whatever you call it
 h2 on things visible before h3
+
+
+How to integrate grids? Media query grid for mobile layout?
+
+
+
+change image size handling to focus on height rather than width - due to saturn having a wider graphic than other planets
+maybe object-fit

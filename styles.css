@@ -4,27 +4,6 @@
     --bars-pad: 1em 2em;
 }
 
-/* ------------------ MEDIA QUERIES BREAK POINTS ------------------ */
-/* Phone W 430 */
-@media (max-width: 431px) {
-    body {
-        background-color: red;
-    }
-
-    /* .flex {
-        display: flex;
-        flex-direction: column;
-    } */
-    /* LOOK UP THE SHOW HIDE CHANGE THE CLASS THING */
-}
-
-/* Tablet W 431-1024*/
-@media (min-width: 431px) and (max-width: 1024px) {
-    body {
-        background-color: green;
-    }
-}
-
 /* ------------------ GLOBAL STYLING ------------------ */
 @font-face {
     font-family: Audiowave;
@@ -49,9 +28,9 @@ body {
     font-family: "Afacad", "sans-serif";
 }
 
-section {
+/* section {
     height: 100vh;
-}
+} */
 
 .flex {
     display: flex;
@@ -68,7 +47,7 @@ h1, h2, h3 {
 h1 {
     /* font-size: 4em; */
     /* Syntax: clamp(minimum, preferred, maximum) */
-    font-size: clamp(2rem, 5rem, 8rem);
+    font-size: clamp(4.8vh, 4.8vw, 6vw);
 }
 
 h2 {
@@ -105,8 +84,9 @@ header {
 /* Main/Hero */
 .hero {
     align-items: center;
-    gap: 1rem;
-    padding: 0 7rem 0 7rem;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 100vh;
 }
 
 .heroTextWrapper {
@@ -140,14 +120,16 @@ header {
 }
 
 .cardDiv {
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 30%;
     background-color: blueviolet;
 }
 
 .cardDivText {
-    flex-direction: column;
+    align-items: center;
+    gap: 2em;
 }
 
 /* Signoff Section */
@@ -164,6 +146,71 @@ header {
 footer {
     background-color: var(--bars-color);
     padding: var(--bars-pad);
+}
+
+/* ------------------ MEDIA QUERIES BREAK POINTS ------------------ */
+/* Phone W 430 */
+@media (max-width: 431px) {
+    body {
+        background-color: red;
+    }
+
+    img {
+        max-width: 50vw;
+     }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+    }
+
+    .heroTextWrapper {
+        width: 100vw;
+}
+    
+    .cardSection {
+        background-color: pink;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .cardImg {
+       max-height: 50vh;
+    }
+    
+    .cardDivContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .cardDiv {
+        align-items: center;
+        background-color: blueviolet;
+        width: 100vw;
+        gap: 1rem;
+    }
+    
+    .cardDivText {
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        gap: 2em;
+    }
+}
+
+/* Tablet W 431-1024*/
+@media (min-width: 431px) and (max-width: 1024px) {
+    body {
+        background-color: green;
+    }
 }
 
 /* ------------------ NAME ------------------ */
