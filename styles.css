@@ -161,7 +161,7 @@ header {
 
 /* Card Section */
 .cardSection {
-    padding: 3rem 2rem;
+    padding: 3rem 5rem;
     background-color: var(--bars-color);
     flex-direction: column;
     align-items: center;
@@ -177,7 +177,7 @@ header {
 .cardGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 6rem;
 }
 
 .cardDiv {
@@ -226,6 +226,75 @@ header {
 footer {
     background-color: var(--bars-color);
     padding: var(--bars-pad);
+}
+
+/* ------------------ PAGES ------------------ */
+
+.planetPage {
+            /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.planetName {
+                    /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+}
+
+.planetSubTitle {
+    justify-content: space-evenly;
+    gap: 4rem;
+}
+
+.pageImg {
+            /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+    max-width: 20vw;
+}
+
+.planetBasics {
+                /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+}
+
+.planetType {
+                /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+}
+
+.planetAtmo {
+                /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+}
+
+.planetInfo {
+                /* border for testing */
+        /*  */border-style: solid;
+        /*  */border-width: 1px;
+        /*  */border-color:green;
+        /*  */
+        font-size: 1.5rem;
 }
 
 /* ------------------ MEDIA QUERIES BREAK POINTS ------------------ */
