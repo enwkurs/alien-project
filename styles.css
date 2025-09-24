@@ -1,6 +1,6 @@
 /* ------------------ GLOBAL VARIABLES ------------------ */
 :root { 
-    --bars-color: #26133A;
+    --bars-color: #46236C;
     --bars-pad: 1em 2em;
 }
 
@@ -21,23 +21,19 @@
     margin: 0;
     padding: 0;
 }
-
 /* ----- Begone useless spaces I did not ask for ----- */
 
 body {
     font-family: "Afacad", "sans-serif";
 }
 
-/* section {
-    height: 100vh;
-} */
+a:link {
+    color:#FF8EE6;
+    text-decoration: none;
+}
 
 .flex {
     display: flex;
-}
-
-img {
-    max-width: 30vw;
 }
 
 h1, h2, h3 {
@@ -45,17 +41,40 @@ h1, h2, h3 {
 }
 
 h1 {
-    /* font-size: 4em; */
     /* Syntax: clamp(minimum, preferred, maximum) */
-    font-size: clamp(4.8vh, 4.8vw, 6vw);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    color: #46236C;
+    text-shadow:
+    .02em .02em 0px #fff, 
+    -.02em .02em 0px #fff,
+    -.02em -.02em 0px #fff,
+    .02em -.02em 0px #fff,
+    0px .05em 0px #98E9FF,
+    0px .1em 0px #DEA9FF;
 }
 
 h2 {
-    font-size: clamp(1rem, 6vw, 7rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #fff;
+    text-shadow:
+    .04em .04em 0px #46236C, 
+    -.04em .04em 0px #46236C,
+    -.04em -.04em 0px #46236C,
+    .04em -.04em 0px #46236C,
+    0px .08em 0px #93FFCC,
+    0px .14em 0px #DEA9FF;
 }
 
 h3 {
-    font-size: clamp(1rem, 4vw, 2rem);
+    font-size: clamp(1.7rem, 5vw, 2.5rem);
+    color: #FF8EE6;
+    text-shadow:
+    .02em .02em 0px #fff, 
+    -.02em .02em 0px #fff,
+    -.02em -.02em 0px #fff,
+    .02em -.02em 0px #fff,
+    0px .09em 0px #93FFCC,
+    0px .15em 0px #DEA9FF;
 }
 
 /* ------------------ LOCAL STYLING ------------------ */
@@ -64,12 +83,12 @@ h3 {
 header {
     justify-content: space-between;
     align-items: center;
-    height: 5em;
+    height: 5rem;
     background-color: var(--bars-color);
     padding: var(--bars-pad);
 }
 
-.headerIcon {
+.navIcon {
     height: 4rem;
 }
 
@@ -77,68 +96,129 @@ header {
     list-style-type: none;
     gap: 1em;
     font-family: "Audiowave", "sans-serif";
-    font-size: 2em;
-    font-size: clamp(1rem, 2vw, 5rem);
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+/* ----- LINK ANIMATIONS ----- */
+
+.headerNavList a:link {
+    color: #fff;
+    text-shadow:
+    .03em .03em 0px #46236C, 
+    -.03em .03em 0px #46236C,
+    -.03em -.03em 0px #46236C,
+    .03em -.03em 0px #46236C,
+    0px .09em 0px #93FFCC,
+    0px .15em 0px #DEA9FF;
+    text-decoration: none;
+    transition-property: text-shadow;
+    transition-timing-function: linear;
+    /* transition-delay: 0.05s; */
+    transition-duration: .2s;
+}
+
+.headerNavList a:visited {
+    color: #fff;
+
+}
+
+.headerNavList a:hover {
+    /* color: #98E9FF; */
+    text-shadow:
+    .04em .04em 0px #FF8EE6, 
+    -.04em .04em 0px #FF8EE6,
+    -.04em -.04em 0px #FF8EE6,
+    .04em -.04em 0px #FF8EE6,
+    .18em .18em 0px #93FFCC,
+    -.18em -.18em 0px #98E9FF,
+    .18em -.18em 0px #DEA9FF;
+    text-decoration: none;
 }
 
 /* Main/Hero */
 .hero {
     align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    height: 100vh;
+    justify-content: space-around;
+    padding: 6rem 2rem;
+    gap: 1rem;
+}
+
+.hero img {
+    max-width: 80%;
 }
 
 .heroTextWrapper {
-            /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
-    width: 50vw;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    gap: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
 }
 
 /* Card Section */
 .cardSection {
-    background-color: pink;
+    padding: 3rem 2rem;
+    background-color: var(--bars-color);
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .cardImg {
-    height: 10rem;
-
+    height: 200px;
+    object-fit: contain;
 }
 
-.cardDivContainer {
-    justify-content: space-evenly;
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .cardDiv {
+    color: #fefefe;
+    font-size: 1.2rem;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 30%;
-    background-color: blueviolet;
+    gap: 1rem;
 }
 
-.cardDivText {
-    align-items: center;
-    gap: 2em;
+.readMore {
+    margin-top: auto;
 }
 
 /* Signoff Section */
 .signOff {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: blueviolet;
+    gap: 2rem;
+    padding: 7rem 2rem;
+    text-align: center;
+}
 
+.signOff img {
+    height: 300px;
+    object-fit: contain;
+}
+
+.signOff h2 {
+        /* Syntax: clamp(minimum, preferred, maximum) */
+        font-size: clamp(4rem, 10vw, 6rem);
+        color: #46236C;
+        text-shadow:
+        .02em .02em 0px #fff, 
+        -.02em .02em 0px #fff,
+        -.02em -.02em 0px #fff,
+        .02em -.02em 0px #fff,
+        0px .05em 0px #98E9FF,
+        0px .1em 0px #DEA9FF;
 }
 
 /* Footer */
@@ -149,67 +229,76 @@ footer {
 }
 
 /* ------------------ MEDIA QUERIES BREAK POINTS ------------------ */
-/* Phone W 430 */
+
+/* ----- Phone W 430 ----- */
 @media (max-width: 431px) {
-    body {
-        background-color: red;
+    .headerNavList {
+        display: none;
     }
 
-    img {
-        max-width: 50vw;
-     }
+    body {
+        /* background-color: red; */
+    }
+
+    /* HERO */
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 3rem 1rem 3rem 1rem;
+        
+    }
+
+    .heroTextWrapper {
+        width: 100%;
+}
+
+    /* PLANETS */
+
+    .cardSection {
+        padding: 2rem 1rem;
+    }
+    
+    .cardGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+    
+    .cardDiv {
+        gap: 1.5rem;
+    }
+}
+
+/* ----- Tablet W 431-1024 -----*/
+@media (min-width: 431px) and (max-width: 1024px) {
+    body {
+        /* background-color: green; */
+    }
 
     .hero {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        height: 100vh;
-        width: 100vw;
-        padding: 0;
     }
 
     .heroTextWrapper {
-        width: 100vw;
-}
+        width: 100%;
+    }
     
     .cardSection {
-        background-color: pink;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
-    
-    .cardImg {
-       max-height: 50vh;
-    }
-    
-    .cardDivContainer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
+
+    .cardGrid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
     }
     
     .cardDiv {
-        align-items: center;
-        background-color: blueviolet;
-        width: 100vw;
         gap: 1rem;
-    }
-    
-    .cardDivText {
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        gap: 2em;
-    }
-}
-
-/* Tablet W 431-1024*/
-@media (min-width: 431px) and (max-width: 1024px) {
-    body {
-        background-color: green;
     }
 }
 

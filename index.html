@@ -9,83 +9,86 @@
         <!-- External Files -->
         <link rel="stylesheet" href="styles.css" />
         <!-- <script defer src="script.js"></script> -->
-
-        <body>
-            <header class="flex">
-                <img src="/assets/ufo v 2.png" class="headerIcon">
-                <nav>
-                    <ul class="flex headerNavList">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Planets</a></li>
-                        <li><a href="index.html">About</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <section class="flex hero">
-                <img src="assets/ufo v 2.png">
-                <div class="flex heroTextWrapper">
-                    <h1>Alien Realestate</h1>
-                    <p>This part of the text will be a short sales pitch on Alien Realestate and should be a few sentences long. For now this is a placeholder text while I try to figure out what creative writing should be there. Writing is hard.</p>
-                </div>
-            </section>
-
-            <section class="flex cardSection">
-                <h2>Available Prospects</h2>
-                <div class="flex cardDivContainer">
-                    <div class="flex cardDiv">
-                        <h3>Earth</h3>
-                        <div class="flex cardDivText">
-                            <img src="/assets/earth.png" class="cardImg">
-                            <p>This is a short seller section on the planet involved in this section. It is brief and only a few words. Not tons of info.
-                            <br><br>
-                            <a href="URL">Read More >>></a></p>
-                        </div>
-                    </div>
-
-                    <div class="flex cardDiv">
-                        <h3>Mars</h3>
-                        <div class="flex cardDivText">
-                            <img src="/assets/mars.png" class="cardImg">
-                            <p>This is a short seller section on the planet involved in this section. It is brief and only a few words. Not tons of info. Link to planet page.
-                            <br><br>
-                            <a href="URL">Read More >>></a></p>
-                        </div>
-                    </div>
-
-                    <div class="flex cardDiv">
-                        <h3>Saturn</h3>
-                        <div class="flex cardDivText">
-                            <img src="/assets/saturn.png" class="cardImg">
-                            <p>This is a short seller section on the planet involved in this section.
-                            <br><br>
-                            <a href="URL">Read More >>></a></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="flex signOff">
-                <img src="/assets/ufo v 2.png">
-                <h2>Don't delay, invade today!</h2>
-            </section>
-
-            <footer>
-                <div class="creditsDiv">
-                    <h3>Credits</h3>
-                    <ul>
-                        <li>Credit Link</li>
-                        <li>Credit Link</li>
-                        <li>Credit Link</li>
-                    </ul>
-                </div>
-
-                <div class="socialsDiv">
-                    <img src="code.png">
-                    <img src="code.png">
-                    <img src="code.png">
-                </div>
-            </footer>
-        </body>
     </head>
+
+    <body>
+        <header class="flex">
+            <img onclick="menuToggle()" class="navIcon" src="/assets/ufogradient.png" alt="Navigation menu button" />
+            <nav>
+                <ul class="flex headerNavList navHover">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#planets">Planets</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="flex hero">
+            <img src="assets/ufowoosh.png">
+            <div class="flex heroTextWrapper">
+                <h1>Orbit Attainments PPHC</h1>
+                <p>We're the number one ( <i>and only</i> ) Planetary Property Holding Company ( PPHC ) in the known ( <i>and unkown</i>) universe! We handle the boring beaurocratic details, so you don't have to! We pride ourselves on discovering, assessing, and valuating only the most exclusive and lucrative planetry properties for our clients. With Orbit Attainments PPHC, you're guaranteed to find a planet suitable for the goals of your interstellar curiosity, down to the finest detail. Whether you're looking to study, conquest, expand, relocate, or even just secure a vacation spot for the occasional visitation, we guarantee you'll find the perfect candidate for your galactic needs. Our agents are on standby waiting to take you into a new orbit today!</p>
+            </div>
+        </section>
+
+        <section id="planets" class="flex cardSection">
+            <h2>Available Properties</h2>
+            <div class="cardGrid">
+                <!-- EARTH -->
+                <div class="flex cardDiv">
+                    <h3>Earth</h3>
+
+                    <img src="/assets/earth.png" class="cardImg">
+
+                    <p>Perfect for scientific research, hunting, vacationing, or even resettlement! This biodiverse planet is a highly attractive property that we at Orbit Attainments PPHC have been cultivating for quite some time!</p>
+
+                    <p class="flex readMore"><a href="URL">Read More >>></a></p>
+                </div>
+
+                <!-- MARS -->
+                <div class="flex cardDiv">
+                    <h3>Mars</h3>
+                    <img src="/assets/mars.png" class="cardImg">
+                    <p>Don't judge a planet by its atmosphere! While this red gem might seem like it doesn't have much to offer, we can assure you that Orbit Attainments PPHC has recently refit this planet for fresh development! Perfect for those looking to terraform!</p>
+                        
+                    <p class="flex readMore"><a href="URL">Read More >>></a></p>
+                    
+                </div>
+
+                <!-- SATURN -->
+                <div class="flex cardDiv">
+                    <h3>Saturn</h3>
+                    
+                    <img src="/assets/saturn.png" class="cardImg">
+
+                    <p>We guarantee that our most industrious of clients won't be disappointed in this investment property. Whether your goal is to harvest large quantities of valuable resources or to build a massive chain of luxury lunar rental properties, Orbital Attainments PPHC has you covered with this stunning offer!</p>
+                        
+                    <p class="flex readMore"><a href="URL">Read More >>></a></p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="flex signOff">
+            <img src="/assets/invitation.png">
+            <h2>Don't delay, invade today!</h2>
+        </section>
+
+        <footer>
+            <div class="creditsDiv">
+                <h3>Credits</h3>
+                <ul>
+                    <li>Credit Link</li>
+                    <li>Credit Link</li>
+                    <li>Credit Link</li>
+                </ul>
+            </div>
+
+            <div class="socialsDiv">
+                <img src="code.png">
+                <img src="code.png">
+                <img src="code.png">
+            </div>
+        </footer>
+    </body>
 </html>
