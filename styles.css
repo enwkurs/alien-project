@@ -323,11 +323,17 @@ footer {
 @media (max-width: 431px) {
 
     header {
-        justify-content: flex-end;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 1rem;
+        height: auto;
+        padding-top: 2rem;
     }
 
     .headerNavList {
-        /* display: none; */
+        display: none;
+        background-color: #46236C;
     }
 
     body {
