@@ -7,7 +7,7 @@ function navToggle() {
 
   console.log(dropdownNav);
 
-  if (dropdownNav.style.display === 'none') {
+  if (window.getComputedStyle(dropdownNav).display === 'none') {
     dropdownNav.style.display = 'flex';
     dropdownNav.style.flexDirection = 'column';
     dropdownNav.style.alignItems = 'flex-end';
