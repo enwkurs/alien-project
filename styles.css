@@ -32,6 +32,11 @@ a:link {
     text-decoration: none;
 }
 
+a:visited {
+    color:#FF8EE6;
+    text-decoration: none;
+}
+
 .flex {
     display: flex;
 }
@@ -81,7 +86,7 @@ h3 {
 
 /* Header */
 header {
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     height: 5rem;
     background-color: var(--bars-color);
@@ -90,6 +95,7 @@ header {
 
 .navIcon {
     height: 4rem;
+    display: none;
 }
 
 .headerNavList {
@@ -98,6 +104,9 @@ header {
     font-family: "Audiowave", "sans-serif";
     font-size: clamp(1.5rem, 5vw, 2rem);
 }
+
+/* Hamburger Nav List */
+
 
 /* ----- LINK ANIMATIONS ----- */
 
@@ -208,6 +217,11 @@ header {
     object-fit: contain;
 }
 
+.subTag {
+    font-size: clamp(.5rem, 1vw, 1rem);
+    color: #d1cdd5;
+}
+
 .signOff h2 {
         /* Syntax: clamp(minimum, preferred, maximum) */
         font-size: clamp(4rem, 10vw, 6rem);
@@ -221,84 +235,59 @@ header {
         0px .1em 0px #DEA9FF;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
     background-color: var(--bars-color);
     padding: var(--bars-pad);
 }
 
+/* CREDITS */
+.creditsDiv {
+    flex-direction: column;
+    gap: 1rem;
+}
+.creditsList {
+    color: #fff;
+    list-style-type: none;
+}
+
 /* ------------------ PAGES ------------------ */
 
 .planetPage {
-            /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    /* max-width: 60vw; */
     padding: 3rem 15rem;
 }
 
 .planetName {
-                    /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
+    padding: 0 2rem;
 }
 
 .planetSubTitle {
+    background-color: #46236C;
+    color: #fff;
+    border-radius: 1.5rem;
     justify-content: space-evenly;
     gap: 4rem;
+    padding: 1rem 2rem;
 }
 
 .pageImg {
-            /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
     max-width: 20vw;
 }
 
-.planetBasics {
-                /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
-}
-
-.planetType {
-                /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
-}
-
-.planetAtmo {
-                /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
+.planetHeader {
+    flex-direction: column;
 }
 
 .planetInfo {
-                /* border for testing */
-        /*  */border-style: solid;
-        /*  */border-width: 1px;
-        /*  */border-color:green;
-        /*  */
         font-size: 1.3rem;
         flex-direction: column;
         gap: 2rem;
+        padding: 0 2rem;
 }
 
 .makeContact {
@@ -308,12 +297,21 @@ footer {
     margin-left: auto;
 }
 
+.makeContact h2 {
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    background-color: #46236C;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
 .makeContact p {
     font-size: 1.5rem;
 }
 
 .makeContact ul {
     font-size: 1.8rem;
+    color:#FF8EE6;
     list-style-image: url("/assets/orbit.png")
 }
 
@@ -322,6 +320,7 @@ footer {
 /* ----- Phone W 430 ----- */
 @media (max-width: 431px) {
 
+    /* HOME PAGE */
     header {
         flex-direction: column;
         justify-content: flex-start;
@@ -331,13 +330,13 @@ footer {
         padding-top: 2rem;
     }
 
+    .navIcon {
+        display: flex;
+    }
+
     .headerNavList {
         display: none;
         background-color: #46236C;
-    }
-
-    body {
-        /* background-color: red; */
     }
 
     /* HERO */
@@ -354,7 +353,7 @@ footer {
         width: 100%;
 }
 
-    /* PLANETS */
+    /* PLANET CARDS */
 
     .cardSection {
         padding: 2rem 1rem;
@@ -368,12 +367,59 @@ footer {
     .cardDiv {
         gap: 1.5rem;
     }
+
+    /* PLANET PAGES */
+
+    .planetPage {
+        padding: 3rem 1rem;
+    }
+
+    /* .planetName {
+
+    } */
+
+    .planetSubTitle {
+        flex-direction: column;
+        gap: .5rem;
+        padding: 1rem 2rem;
+    }
+
+    .pageImg {
+        max-width: 80vw;
+    }
+
+    .planetInfo {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .makeContact {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .makeContact p {
+        font-size: 1rem;
+    }
+
+    /* .makeContact ul {
+        font-size: 1.8rem;
+        list-style-image: url("/assets/orbit.png")
+    } */
 }
 
 /* ----- Tablet W 431-1024 -----*/
 @media (min-width: 431px) and (max-width: 1024px) {
     body {
         /* background-color: green; */
+    }
+
+    .headerNavList {
+        display: flex;
     }
 
     .hero {
@@ -400,6 +446,48 @@ footer {
     .cardDiv {
         gap: 1rem;
     }
+
+    /* PLANET PAGES */
+
+    .planetPage {
+        padding: 3rem 1rem;
+    }
+
+    /* .planetName {
+
+    } */
+
+    .planetSubTitle {
+        gap: .5rem;
+        padding: 1rem 2rem;
+    }
+
+    .pageImg {
+        max-width: 80vw;
+    }
+
+    .planetInfo {
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .makeContact {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .makeContact p {
+        font-size: 1rem;
+    }
+
+    .makeContact ul {
+        font-size: 1.8rem;
+        list-style-image: url("/assets/orbit.png")
+    }
+
 }
 
 /* ------------------ NAME ------------------ */

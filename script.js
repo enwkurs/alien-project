@@ -3,7 +3,7 @@ console.log('Take Me To Your Leader');
 function navToggle() {
   console.log('Nav contact confirmed');
 
-  let dropdownNav = document.querySelector('.headerNavList');
+  let dropdownNav = document.querySelector('#headerHam');
 
   console.log(dropdownNav);
 

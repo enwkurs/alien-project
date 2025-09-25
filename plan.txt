@@ -69,3 +69,17 @@ How to integrate grids? Media query grid for mobile layout?
 
 change image size handling to focus on height rather than width - due to saturn having a wider graphic than other planets
 maybe object-fit
+
+
+CREDITS URLS
+
+Orbit icon
+<a href="https://www.flaticon.com/free-icons/solar-system" title="solar system icons">Solar system icons created by edt.im - Flaticon</a>
+
+
+Planets
+https://www.freepik.com/
+
+UFO Hamburger
+Hero image
+Me

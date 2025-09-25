@@ -8,16 +8,16 @@
         
         <!-- External Files -->
         <link rel="stylesheet" href="styles.css" />
-        <!-- <script defer src="script.js"></script> -->
+        <script defer src="script.js"></script>
     </head>
 
     <body>
         <header class="flex">
-            <img onclick="menuToggle()" class="navIcon" src="/assets/ufogradient.png" alt="Navigation menu button" />
+            <img onclick="navToggle()" class="navIcon" src="/assets/ufogradient.png" alt="Navigation menu button" />
             <nav>
-                <ul class="flex headerNavList navHover">
+                <ul id="headerHam" class="flex headerNavList">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#planets">Planets</a></li>
+                    <li><a href="/index.html#planets">Planets</a></li>
                     <li><a href="index.html">About</a></li>
                 </ul>
             </nav>
@@ -25,23 +25,23 @@
 
         <section class="flex planetPage">
             <img src="assets/earth.png" class="pageImg" />
-            <div>
+            <div class="flex planetHeader">
                 <h1 class="flex planetName">Earth</h1>
 
                 <div class="flex planetSubTitle">
                     <div class="planetBasics">
                         <p><b>1</b> moon <b>510,000,000</b> sqm lot</p>
-                        <p>Milky Way Galaxy</p>
+                        <p class="subTag">Milky Way Galaxy</p>
                     </div>
     
                     <div class="planetType">
                         <p><b>Terrestrial</b> with central core, rocky mantle, solid crust</p>
-                        <p>Planet Type</p>
+                        <p class="subTag">Planet Type</p>
                     </div>
                     
                     <div class="planetAtmo">
                         <p><b>Nitrogen, Oxygen, Trace Gasses</b></p>
-                        <p>Atmospheric Composition</p>
+                        <p class="subTag">Atmospheric Composition</p>
                     </div>
                 </div>
             </div>
@@ -97,20 +97,20 @@
 
 
         <footer>
-            <div class="creditsDiv">
+            <div class="flex creditsDiv">
                 <h3>Credits</h3>
-                <ul>
-                    <li>Credit Link</li>
-                    <li>Credit Link</li>
-                    <li>Credit Link</li>
+                <ul class="creditsList">
+                    <li><a href="https://www.freepik.com/" target="_blank">Planets - Freepik</a></li>
+                    <li><a href="https://www.flaticon.com/free-icons/solar-system" target="_blank">Solar system icons created by edt.im - Flaticon</a></li>
+                    <li>UFO Menu Button - UFO Home Image - By Me</li>
                 </ul>
             </div>
 
-            <div class="socialsDiv">
+            <!-- <div class="socialsDiv">
                 <img src="code.png">
                 <img src="code.png">
                 <img src="code.png">
-            </div>
+            </div> -->
         </footer>
     </body>
 </html>
